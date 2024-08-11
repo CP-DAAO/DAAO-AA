@@ -22,6 +22,16 @@ This script automatically casts a vote via agent, in favor of a specified propos
 
 [Example `castVote` Transaction via AA (BlockScout)](https://optimism-sepolia.blockscout.com/tx/0x305544f74bcf37a06b15f531274690703d41db3e6d444c257de674afa325721d)
 
+### Metal Network
+
+- **EntryPoint**: `0x49411A1ED6fb13F949d0D84a5a62EE7F6202177b`
+- **WalletFactory**: `0xffBB892a88d2877c64755155CD40f21432863Fa9`
+- **Governor**: `0xAb563D95Aeb44aA2aa4FD49Bb7915E7C55CdEeB9`
+- **Token**: `0xd3631F0ac03Cbee7FeA3ca472064e469385344d1`
+- **Timelock**: `0x97BD38745620387f14e34B3658C316b65da561D1`
+
+[Example `castVote` Transaction via AA (BlockScout)](https://testnet.explorer.metall2.com/tx/0x71b3f3285046be30df67de623dd0b6d167fa22874a06b59c71563395c1c5f50c)
+
 ---
 
 # Test
@@ -50,4 +60,5 @@ This script automatically casts a vote via agent, in favor of a specified propos
    ```bash
    $ npx hardhat run scripts/2_castVote_agent.js --network baseSepolia
    $ npx hardhat run scripts/2_castVote_agent.js --network opSepolia
+   $ npx hardhat run scripts/2_castVote_agent.js --network metalTestnet
    ```

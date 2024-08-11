@@ -49,6 +49,12 @@ module.exports = {
       chainId: 11155420,
       accounts: [process.env.PRIVATE_KEY, process.env.AGENT_KEY, process.env.OWNER_KEY],
     },
+
+    metalTestnet: {
+      url: 'https://testnet.rpc.metall2.com',
+      chainId: 1740,
+      accounts: [process.env.PRIVATE_KEY, process.env.AGENT_KEY, process.env.OWNER_KEY],
+    },
   },
 
   mocha: {

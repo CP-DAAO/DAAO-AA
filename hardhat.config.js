@@ -19,7 +19,8 @@ module.exports = {
     hardhat: {
       forking: {
         enabled: true,
-        url: 'https://84532.rpc.thirdweb.com',
+        url: 'https://sepolia.base.org',
+        blockNumber: 13795621,
       },
       chainId: 84532,
     },
@@ -28,14 +29,29 @@ module.exports = {
     },
 
     base: {
-      url: 'https://base.llamarpc.com	',
+      url: 'https://base.llamarpc.com',
       chainId: 8453,
-      accounts: [process.env.PRIVATE_KEY],
+      accounts: [process.env.PRIVATE_KEY, process.env.AGENT_KEY, process.env.OWNER_KEY],
     },
     baseSepolia: {
-      url: 'https://84532.rpc.thirdweb.com',
+      url: 'https://sepolia.base.org',
       chainId: 84532,
-      accounts: [process.env.PRIVATE_KEY],
+      accounts: [process.env.PRIVATE_KEY, process.env.AGENT_KEY, process.env.OWNER_KEY],
+    },
+
+    op: {
+      url: 'https://optimism.llamarpc.com',
+      chainId: 10,
+      accounts: [process.env.PRIVATE_KEY, process.env.AGENT_KEY, process.env.OWNER_KEY],
+    },
+    opSepolia: {
+      url: 'https://sepolia.optimism.io',
+      chainId: 11155420,
+      accounts: [process.env.PRIVATE_KEY, process.env.AGENT_KEY, process.env.OWNER_KEY],
     },
   },
+
+  mocha: {
+    timeout: 99999999,
+  }
 };

@@ -1,0 +1,3 @@
+[submodule "DAAO-contracts"]
+	path = DAAO-contracts
+	url = git@github.com:CP-DAAO/DAAO-contracts.git
